@@ -1,84 +1,120 @@
-# Customer_Behavior_analysis
-data analytics project showcasing customer behaviour analysis using python ,sql and power Bi. 
-📊 Data Analytics Project
-📌 Overview
+📊 Customer Behavior Analytics (SQL + Python + Power BI)
+📌 Project Overview
 
-This project demonstrates an end-to-end data analytics workflow using Python, SQL, and Power BI.
-The goal is to extract insights from raw data through exploration, cleaning, querying, visualization, and reporting.
+This project analyzes customer purchasing behavior to identify high-value customer segments and sales patterns using SQL and Python.
+Key performance indicators (KPIs) such as total revenue, average order value, and purchase frequency were calculated and visualized using Power BI dashboards to support business decision-making.
 
-The project covers:
+🎯 Business Problem
 
-Data loading and preprocessing in Python
-Exploratory Data Analysis (EDA)
-Data cleaning and transformation
-SQL-based analysis using relational databases
-Interactive dashboard creation in Power BI
-Final insights presented via report and PPT
+Businesses need to understand:
+Which customers contribute most to revenue
+What purchasing patterns exist
+How often customers return
+Which products drive sales
+The goal of this project is to use historical transaction data to:
+Segment customers based on purchasing behavior
+Identify high-value customers
+Discover sales trends and patterns
+Provide insights that can help improve marketing and retention strategies
 
-📁 Dataset
+🗂 Dataset
 
-Format: CSV (or Excel)
-Source: (Mention source if public, otherwise write “Provided dataset for analysis”)
-Contains structured data suitable for business analysis
-Includes missing values and inconsistencies handled during cleaning
-Key fields (example):
-Date
-Category
-Numerical metrics (sales, revenue, score, etc.)
-Categorical attributes (region, product, type, etc.)
+Source: Public customer transaction dataset
+Records: Customer ID, Product, Quantity, Price, Date
+Size: (rows is (3900), columns is (18))
+Data Issues: Missing values, inconsistent date formats, duplicates
 
-🛠 Tools & Technologies
+🔧 Tools & Technologies
 
-Python (Pandas, NumPy, Matplotlib/Seaborn)
-SQL (PostgreSQL / MySQL / SQL Server)
-Power BI (Dashboard & DAX measures)
-Gamma (for PPT presentation)
-Jupyter Notebook / VS Code
+SQL (MySQL) – Data querying, aggregation, KPI calculation
+Python (Pandas, NumPy, Matplotlib, Seaborn) – Data cleaning and EDA
+Power BI – Interactive dashboard and visualization
+GitHub – Version control and project documentation
 
-⚙️ Project Steps
+🔄 Project Workflow
+1️⃣ Data Cleaning
 
-Data Loading (Python)
-Imported dataset using Pandas
-Checked structure, data types, and size
-Exploratory Data Analysis (EDA)
-
-Summary statistics
-
-Distribution analysis
-Correlation analysis
-Outlier detection
-Data Cleaning
+Removed duplicate records
 Handled missing values
-Removed duplicates
-Corrected data types
+Converted date columns into proper datetime format
+Standardized categorical values
 
-Standardized column names
+2️⃣ SQL Analysis
 
-SQL Analysis
-Loaded cleaned data into database
-Ran SQL queries for:
-Aggregations
-Filtering
-Grouping
-Joins (if applicable)
+Calculated key KPIs:
+Total Revenue
+Average Order Value (AOV)
+Purchase Frequency
+Grouped customers based on total spend
+Identified top-performing products and customers
 
-Power BI Dashboard
+3️⃣ Python Exploratory Data Analysis (EDA)
 
-Imported processed data
-Created:
-KPIs
-Charts (bar, line, pie, etc.)
-Slicers and filters
-Reporting & Presentation
-Insights documented in report
-PPT created using Gamma
+Analyzed revenue trends
+Visualized customer segmentation
+Identified product-wise sales patterns
+Checked distribution of order values
 
-Business-focused storytelling
+4️⃣ Power BI Dashboard
 
-📊 Dashboard
+The dashboard includes:
+Revenue trends over time
+Top customers and products
+Customer segmentation
+Sales pattern visualizations
 
-The Power BI dashboard includes:
-Key performance indicators (KPIs)
-Trend analysis
-Category-wise comparison
-Interactive filters for deeper insights
+📊 Key Insights
+
+A small percentage of customers contribute a large portion of total revenue
+Certain product categories generate consistently higher sales
+Repeat customers have significantly higher average order value
+Sales show noticeable seasonal patterns
+
+💡 Business Recommendations
+
+Focus marketing campaigns on high-value customer segments
+Promote top-performing products more aggressively
+Design loyalty programs for repeat customers
+Plan inventory based on seasonal demand trends
+
+📁 Project Structure
+Customer_Behavior_analysis
+│
+├── data
+│   ├── raw_data.csv
+│   └── cleaned_data.csv
+│
+├── sql
+│   └── analysis_queries.sql
+│
+├── notebooks
+│   └── eda.ipynb
+│
+├── powerbi
+│   └── dashboard.pbix
+│
+└── README.md
+
+🚀 How to Run the Project
+
+Clone the repository
+Open the Python notebook and run the data cleaning and EDA
+Load the cleaned data into MySQL
+Execute the SQL queries
+Open the Power BI file and connect it to the cleaned dataset
+
+📌 Resume Description
+
+Customer Behavior Analytics (SQL + Python + Power BI)
+Analyzed customer purchasing behavior using SQL and Python to identify high-value segments and sales patterns.
+Built KPIs and visualized insights using Power BI dashboards to support business decision-making.
+
+📝 Notes
+
+This project demonstrates:
+End-to-end data analytics workflow
+Business-focused problem solving
+SQL + Python + visualization skills
+Clear communication of insights
+
+
